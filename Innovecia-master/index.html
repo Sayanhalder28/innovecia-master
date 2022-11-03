@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+    integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+
+  <script src="main.js"></script>
+
+  <title>TheEvent - Bootstrap Event Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
+  <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .intro {
+ 
+        object-fit: cover;
+        object-position: center;
+  height: auto;
+  width:100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+
+      }
+
+
+
+      #lottie {
+        height: 100%;
+      }
+
+      video {
+        width: 100vw;
+      }
+      #loading {width: 100%;height: 100%;top: 0px;left: 0px;position: fixed;display: block; z-index: 99}
+
+     .text1{
+      text-align: center;
+      padding-left: auto;
+      margin-top: 50vh;
+      color: white;
+      background-color: none;
+
+     } 
+
+#loading-image {position: absolute;z-index: 100} 
+    .dropbtn {
+  color: #fff;
+ 
+  padding: 7px 22px;
+  border-radius: 50px;
+  font-family: "Raleway", sans-serif;
+  background:#1224cb;
+  border: 2px solid #162cff;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+  font-size: 13px;
+}
+.dropbtnn {
+  color:rgba(202, 206, 221, 0.8);
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+
+  background:transparent;
+  
+  transition: all ease-in-out 0.3s;
+  font-weight: 600;
+  margin-left: 8px;
+  margin-top: 6px;
+ 
+  outline: none
+  
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #0007e0;
+background-color: rgb(223, 227, 230);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+ 
+  transition: all ease-in-out 0.3s;
+  background-color: transparent;
+  border: 2px solid #162cff;
+  
+}
+
+#mobile-nav .dropbtnn{
+  font-size: 17px;
+
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+
+  text-decoration: none;
+  outline: none;
+}
+
+#mobile-nav .dropdown-content{
+background:rgb(115 123 153 / 90%)
+}
+
+.neon-box-box 
+{
+	position: relative;
+	width: 170px;
+	height: 95px;
+	background: #05040f;
+	border-radius: 8px;
+	overflow: hidden;
+  margin-bottom: 8%;
+}
+.neon-box-box::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 170px;
+	height: 95px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#45f3ff,#2038d9);
+	animation: animate 4s linear infinite;
+}
+.neon-box-box::after 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 170px;
+	height: 95px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#45f3ff,#2038d9);
+	animation: animate 4s linear infinite;
+	animation-delay: -6s;
+}
+.neon-box-box h3 {
+  text-align: center;
+  margin-top:30%;
+
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+form 
+{
+	position: absolute;
+	inset: 2px;
+	background: #05040f;
+	padding: 6px 40px;
+	border-radius: 8px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+@font-face {
+  font-family: Glitch;
+  src: url(fonts/Glitch\ inside.otf);
+}
+
+.top{
+  margin-top: 20%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  font-size: 80px;
+  font-family: Glitch;
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+.top{
+  margin-top: 100%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  font-family: Glitch;
+}
+
+}
+  </style>
+  <script>
+    $(window).scroll(function(){
+    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+  </script>
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li ><div class="dropdown">
+            <button class="dropbtnn" >Events</button>
+            <div class="dropdown-content">
+              <a href="Individual Events/innovare.html">Innovare</a>
+              <a href="Individual Events/robofooties.html">Robofooties</a>
+              <a href="Individual Events/404 not found.html">404 Not Found</a>
+              <a href="Individual Events/bull master.html">Bull Master</a>
+              <a href="Individual Events/x-race.html">X-Race</a>
+              <a href="Individual Events/tracker.html">Tracker</a>
+            </div>
+          </div></li>
+              
+
+          
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#footer">Venue</a></li>
+          <li><a href="#hotels">Registration</a></li>
+          <li><a href="Gallery/index.html">Gallery</a></li>
+          <li><a href="#supporters">Sponsors</a></li>
+          <li><a href="#footer">Contact</a></li>
+          <li ><div class="dropdown">
+            <button class="dropbtn"  id="dropbtn-login">Login</button>
+            <div class="dropdown-content">
+              <a href="Login/Student/index.html">Participant</a>
+              <a href="Login/Coordinator/index.html">Coordinator</a>
+           
+            </div>
+          </div></li>
+         
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <!-- <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">The Annual<br><span>Marketing</span> Conference</h1>
+      <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
+      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>
+      <a href="#about" class="about-btn scrollto">About The Event</a>
+    </div>
+  </section> -->
+
+    <!-- content above -->
+
+    <h1 class="top">LET'S EXPLORE</h1>
+  
+    <section class="intro">
+
+      <div id="lottie"></div>
+    </section>
+
+  <!-- <video playsinline autoplay muted loop>
+    <source src="inovideo.mp4" type="video/mp4">
+    Your browser does not support the video tag. I suggest you upgrade your browser.
+  </video>
+
+  -->
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p> Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
+              est ut optio sequi unde.</p>
+          </div>
+          <div class="col-lg-3">
+            
+            <div class="neon-box-box" id="box1">
+              <form autocomplete="off">
+                <h3>4L+ Prize </h3>
+              
+              </form>
+            </div>
+           
+          </div>
+          <div class="col-lg-3">
+           
+            <div class="neon-box-box" id="box2">
+              <form autocomplete="off">
+                <h3>20k+ Attendees</h3>
+              
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3">
+           
+            <div class="neon-box-box" id="box2">
+              <form autocomplete="off">
+                <h3>20+ Events</h3>
+              
+              </form>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2 style="color:white;"> Our Events </h2>
+         
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/events/14.png" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="Individual Events/Mathemagic/index.html">Mathemagic</a></h3>
+                <p>Quas alias incidunt</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/events/4.jpeg" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="Individual Events/Robofooties/index.html">Robofooties</a></h3>
+                <p>Consequuntur odio aut</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/events/6.png" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3><a href="Individual Events/Cyberthon/index.html">Cyberthon</a></h3>
+                <p>Fugiat laborum et</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/events/5.jpeg" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3><a href="Individual Events/Innovare/index.html">Innovare</a></h3>
+                <p></p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/events/2.jpeg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="Individual Events/404 Not Found/index.html">404 Not Found</a></h3>
+                <p>Qui molestiae natus</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/events/1.jpeg" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="Individual Events/Game Dev Expo/index.html">GameExpo</a></h3>
+                <p>Non autem dicta</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2 style="color:white">Event Schedule</h2>
+         
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Day 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">Here is our Event Schedule. </h3>
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time style="color:#808180">09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4 style="color: white">Registration</h4>
+                <p>Registrations will start from Xth of October  </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time style="color:#808180">10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpeg" alt="Brenden Legros">
+                </div>
+                <h4 style="color: white">Innovare<span></span></h4>
+                <p>Offline</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time style="color:#808180">11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpeg" alt="Hubert Hirthe">
+                </div>
+                <h4 style="color: white">Robofooties <span>Robotics</span></h4>
+                <p> Offline || 1st Round</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time style="color:#808180">10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/images (2).jpeg" alt="Cole Emmerich">
+                </div>
+                <h4 style="color: white">Tracker <span>Robotics</span></h4>
+                <p>Offline  || 1st Round </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time style="color:#808180">10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/images (8).jpeg" alt="404 not found">
+                </div>
+                <h4 style="color: white">404 not found <span>Web Dev</span></h4>
+                <p> Online</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time style="color:#808180">10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/images (3).jpeg" alt="Alejandrin Littel">
+                </div>
+                <h4 style="color: white">X-Race <span>Robotics</span></h4>
+                <p>Offline || 1st round</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time style="color:#808180">04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/images (4).jpeg" alt="Willow Trantow">
+                </div>
+                <h4 style="color: white">MADCAD<span></span></h4>
+                <p> Offline || 1st round</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+          <!-- Schdule Day 3 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+      <h1 h1 style="text-align:center; color:white; font-size:52px">A collage of events.</h1><hr>
+
+      <div id="gallery" class="container-fluid">  
+        <img src="img/IMG-20221016-WA0002.jpg" class="card img-responsive">
+        <img src="img/glimpses.jpg" class="img-responsive">
+        <img src="img/2.jpg" class="img-responsive">
+         <img src="img/4.jpg" class="img-responsive">
+         
+        <img src="img/IMG-20221016-WA0005.jpg" class="img-responsive">
+        <img src="img/magic.jpg" class="img-responsive">
+
+        <img src="img/IMG_20221016_145552.jpg" class="img-responsive">
+      <img src="img/IMG_20221016_145605.jpg" class="img-responsive">
+
+        <img src="img/IMG-20221016-WA0001.jpg" class="img-responsive">
+        <img src="img/follow.jpg" class="img-responsive">
+      </div>
+      
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Hotels Section
+    ============================-->
+    <section id="hotels" class="section-with-bg wow fadeInUp">
+
+      <div class="reg">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h3>Central Registration</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Pay XXX</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h3>Event Registration</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Pay XXX</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h3>School Registration</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Free</a>
+            </div>
+          </div>
+        </div>
+      
+      
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h3>Gaming Registration</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Pay XXX</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="title">
+        <h1 style="color:white">Sponsors</h1>
+      </div>
+      
+      <!--Carousel Gallery-->
+      <div class="carousel-gallery">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <a href="https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                          <div class="image" style="background-image: url(img/supporters/1.png)">
+                              <div class="overlay">
+                                  <em class="mdi mdi-magnify-plus"></em>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(img/supporters/2.png)">
+                              <div class="overlay">
+                                  <em class="mdi mdi-magnify-plus"></em>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(img/supporters/3.png)">
+                              <div class="overlay">
+                                  <em class="mdi mdi-magnify-plus"></em>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(img/supporters/4.png)">
+                              <div class="overlay">
+                                  <em class="mdi mdi-magnify-plus"></em>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(img/supporters/5.png)">
+                              <div class="overlay">
+                                  <em class="mdi mdi-magnify-plus"></em>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                      <div class="image" style="background-image: url(img/supporters/6.png)">
+                            <div class="overlay">
+                                <em class="mdi mdi-magnify-plus"></em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                    <div class="image" style="background-image: url(img/supporters/7.png)">
+                          <div class="overlay">
+                              <em class="mdi mdi-magnify-plus"></em>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                  <div class="image" style="background-image: url(img/supporters/8.png)">
+                        <div class="overlay">
+                            <em class="mdi mdi-magnify-plus"></em>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                <div class="image" style="background-image: url(img/supporters/9.png)">
+                      <div class="overlay">
+                          <em class="mdi mdi-magnify-plus"></em>
+                      </div>
+                  </div>
+              </a>
+          </div>
+                  <div class="swiper-slide">
+                      <a href="https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(img/supporters/10.png)">
+                              <div class="overlay">
+                                  <em class="mdi mdi-magnify-plus"></em>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+   
+
+       
+      
+               
+      
+                
+               
+      
+                
+            
+    <!--==========================
+      Subscribe Section
+    ============================-->
+   
+
+    <!--==========================
+      Buy Ticket Section
+    ============================-->
+   
+    <!--==========================
+      Contact Section
+    ============================-->
+    
+
+       <!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4  footer-info">
+            <img src="img/logo.png" alt="TheEvenet"/>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-9 footer-links">
+            <h4>Useful Links</h4>
+            <br>
+           
+            <button>
+              Register Now
+            </button>
+          
+            <br><br>
+            <a href="https://goo.gl/maps/hun1Xpozt8yGYJVJA">
+            <button>
+              Location
+            </button>
+          </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Management House, D-1, Sector-V, Saltlake Electronics Complex <br>
+Kolkata – 700 091, West Bengal, India.
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">XXX</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script>
+    
+  </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
+
+</body>
+
+</html>
